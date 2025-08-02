@@ -1,20 +1,40 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_attendance/screens/splash_screen.dart';
-import 'package:qr_attendance/screens/lecturer_dashboard.dart';
-import 'package:qr_attendance/screens/student_dashboard.dart';
-import 'package:qr_attendance/screens/course_registration.dart';
-import 'package:qr_attendance/screens/attendance_history.dart';
-import 'package:qr_attendance/screens/qr_scanning.dart';
-import 'package:qr_attendance/screens/monitoring.dart';
-import 'package:qr_attendance/screens/qr_generation.dart';
-import 'package:qr_attendance/screens/course_details.dart';
-import 'package:qr_attendance/screens/role_based.dart';
-import 'package:qr_attendance/screens/student_profile.dart';
+import 'package:qr_attendance/screens/common/splash_screen.dart';
+import 'package:qr_attendance/screens/lecturer/tabs/lecturer_dashboard.dart';
+import 'package:qr_attendance/screens/student/student_dashboard.dart';
+import 'package:qr_attendance/screens/student/tabs/course_registration.dart';
+import 'package:qr_attendance/screens/student/attendance/student_attendance_history.dart';
+import 'package:qr_attendance/screens/student/attendance/qr_scanning.dart';
+import 'package:qr_attendance/screens/lecturer/tabs/monitoring.dart';
+import 'package:qr_attendance/screens/lecturer/attendance/qr_generation.dart';
+import 'package:qr_attendance/screens/admin/tabs/course_management_screen.dart';
+import 'package:qr_attendance/screens/common/role_based.dart';
+import 'package:qr_attendance/screens/student/tabs/student_profile.dart';
+import 'package:qr_attendance/screens/admin/auth/admin_login_screen.dart';
+import 'package:qr_attendance/screens/lecturer/tabs/course_apply_screen.dart';
+import 'package:qr_attendance/screens/student/student_dashboard.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if (kIsWeb) {
+    // await Firebase.initializeApp(
+    //   options: FirebaseOptions(
+    // CREATE A WEB APP IN FIREBASE CONSOLE AND ADD TH#E CREDENTIALS HERE
+    //     apiKey:
+    //     authDomain:
+    //     projectId:
+    //     storageBucket:
+    //     messagingSenderId:
+    //     appId:
+    //     measurementId:
+    //   ),
+    // );
+  } else {
+    // ADD google-services.json in android/app/
+    await Firebase.initializeApp();
+  }
   runApp(const AttendanceApp());
 }
 
@@ -25,7 +45,7 @@ class AttendanceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Attendance Tracker',
+      title: 'ClassSync',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -40,10 +60,15 @@ class AttendanceApp extends StatelessWidget {
         '/monitoring': (context) => AttendanceMonitoringScreen(),
         '/qr_generation': (context) => QRCodeGenerationScreen(),
         '/course': (context) => CourseManagementScreen(),
+        '/course_apply': (context) => CourseApplyScreen(),
         //student's route
         '/courses': (context) => CourseRegistrationScreen(),
-        '/history': (context) => AttendanceHistoryScreen(),
+        '/history': (context) => StudentAttendanceHistoryScreen(),
         '/qr_scanning': (context) => QRScannerScreen(),
+        // admin route
+        '/admin_login': (context) =>
+            // ignore: prefer_const_constructors
+            AdminLoginScreen(),
       },
       
       // Handle dynamic routes (e.g., passing user data)

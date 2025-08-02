@@ -1,6 +1,6 @@
 {
-    "name": "qr_code_new",
-    "short_name": "qr_code_new",
+    "name": "ClassSync",
+    "short_name": "ClassSync",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

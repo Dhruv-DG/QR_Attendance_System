@@ -43,6 +43,8 @@ dependencies:
   path_provider: ^2.0.8
   csv: ^5.0.0
   share_plus: ^7.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
   
   
   
@@ -62,6 +64,18 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+
+flutter_native_splash:
+  color: "#2C2C2C"
+  image: assets/splash_image.png
+  android: true
+  ios: true
+  fullscreen: true
+
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -74,6 +88,11 @@ flutter:
   assets:
     - assets/download.png
     - assets/profile_placeholder.png
+    - assets/admin.png
+    - assets/professor.png
+    - assets/student.png
+    - assets/app_icon.png
+    - assets/splash_image.png
 
   # assets:
   #   - images/a_dot_burr.jpeg
