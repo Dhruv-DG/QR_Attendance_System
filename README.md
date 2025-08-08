@@ -130,52 +130,58 @@ Below are the key interfaces of the **QR Attendance System**:
 
 ---
 
-### 🧑‍🎓 Student Dashboard
+## 📸 Screenshots
+
+Below are the key interfaces of the **QR Attendance System**:
+
+---
+
+### 🧑‍🎓 Student Dashboard  
 A centralized dashboard for students to view and manage their attendance details.
 
-![Student Dashboard](screenshots/student/student_dashboard.jpeg)
+<img src="screenshots/student/student_dashboard.jpeg" alt="Student Dashboard" height="350"/>
 
 ---
 
-### 📷 QR Scanning Interface
+### 📷 QR Scanning Interface  
 Interface for scanning QR codes to mark attendance.
 
-![QR Scanning Interface](screenshots/student/student_qr_scanning.jpeg)
+<img src="screenshots/student/student_qr_scanning.jpeg" alt="QR Scanning Interface" height="350"/>
 
 ---
 
-### 📚 Course Registration
+### 📚 Course Registration  
 Students can register for courses they are enrolled in.
 
-![Course Registration](screenshots/student/student_course_registration.jpeg)
+<img src="screenshots/student/student_course_registration.jpeg" alt="Course Registration" height="350"/>
 
 ---
 
-### 📅 Attendance History
+### 📅 Attendance History  
 View detailed history of attendance with timestamps and course info.
 
-![Attendance History](screenshots/student/student_attendance_history.jpeg)
+<img src="screenshots/student/student_attendance_history.jpeg" alt="Attendance History" height="350"/>
 
 ---
 
-### 🧑‍🏫 QR Code Generation (Lecturer)
+### 🧑‍🏫 QR Code Generation (Lecturer)  
 Lecturers can generate QR codes for each class session.
 
-![QR Code Generation](screenshots/lecturer/lecturer_qr_generated.jpeg)
+<img src="screenshots/lecturer/lecturer_qr_generated.jpeg" alt="QR Code Generation" height="350"/>
 
 ---
 
-### 📊 Attendance Reports
+### 📊 Attendance Reports  
 Detailed reports showing student attendance per course.
 
-![Attendance Reports](screenshots/lecturer/lecturer_attendance_report.jpeg)
+<img src="screenshots/lecturer/lecturer_attendance_report.jpeg" alt="Attendance Reports" height="350"/>
 
 ---
 
-### 🛠️ Admin Dashboard
+### 🛠️ Admin Dashboard  
 Admin panel for managing users, courses, and system-level configurations.
 
-![Admin Dashboard](screenshots/admin/admin_lecturers_approval.jpeg)
+<img src="screenshots/admin/admin_lecturers_approval.jpeg" alt="Admin Dashboard" height="350"/>
 
 ---
 
