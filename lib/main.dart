@@ -19,20 +19,20 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) {
-    // await Firebase.initializeApp(
-    //   options: FirebaseOptions(
-    // CREATE A WEB APP IN FIREBASE CONSOLE AND ADD TH#E CREDENTIALS HERE
-    //     apiKey:
-    //     authDomain:
-    //     projectId:
-    //     storageBucket:
-    //     messagingSenderId:
-    //     appId:
-    //     measurementId:
-    //   ),
-    // );
+    await Firebase.initializeApp(
+      // Add these by creating web app in the firebase
+      // options: FirebaseOptions(
+      //     apiKey:
+      //     authDomain:
+      //     projectId:
+      //     storageBucket:
+      //     messagingSenderId:
+      //     appId:
+      //     measurementId:
+      // ),
+    );
   } else {
-    // ADD google-services.json in android/app/
+    // Add google-services.json in the specified directory by creating android app in firebase
     await Firebase.initializeApp();
   }
   runApp(const AttendanceApp());
