@@ -126,15 +126,61 @@ flutter pub get
 
 ## 📸 Screenshots
 
-> *(Include screenshots in the repo's `/screenshots/` directory and reference them here)*
+Below are the key interfaces of the **QR Attendance System**:
 
-- Student Dashboard  
-- QR Scanning Interface  
-- Course Registration  
-- Attendance History  
-- QR Code Generation (Lecturer)  
-- Attendance Reports  
-- Admin Dashboard  
+---
+
+### 🧑‍🎓 Student Dashboard
+A centralized dashboard for students to view and manage their attendance details.
+
+![Student Dashboard](screenshots/student/student_dashboard.jpeg)
+
+---
+
+### 📷 QR Scanning Interface
+Interface for scanning QR codes to mark attendance.
+
+![QR Scanning Interface](screenshots/student/student_qr_scanning.jpeg)
+
+---
+
+### 📚 Course Registration
+Students can register for courses they are enrolled in.
+
+![Course Registration](screenshots/student/student_course_registration.jpeg)
+
+---
+
+### 📅 Attendance History
+View detailed history of attendance with timestamps and course info.
+
+![Attendance History](screenshots/student/student_attendance_history.jpeg)
+
+---
+
+### 🧑‍🏫 QR Code Generation (Lecturer)
+Lecturers can generate QR codes for each class session.
+
+![QR Code Generation](screenshots/lecturer/lecturer_qr_generated.jpeg)
+
+---
+
+### 📊 Attendance Reports
+Detailed reports showing student attendance per course.
+
+![Attendance Reports](screenshots/lecturer/lecturer_attendance_report.jpeg)
+
+---
+
+### 🛠️ Admin Dashboard
+Admin panel for managing users, courses, and system-level configurations.
+
+![Admin Dashboard](screenshots/admin/admin_lecturers_approval.jpeg)
+
+---
+
+### 📁 More Screens Available  
+👉 **Check out the [`/screenshots/`](screenshots/) folders (`admin/`, `student/`, `lecturer/`, `common/`) in the repository for all available UI screens.**
 
 ---
 
